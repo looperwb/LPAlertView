@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uD4-z7-1hg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Mew-Cl-j2t">
+            <objects>
+                <viewController id="uD4-z7-1hg" customClass="ViewController" customModule="LPAlertView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pSC-h5-6Et"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Or-5i-yc7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H0k-QO-Nmv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nW-wm-Uli">
+                                <rect key="frame" x="255" y="285" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.64705882349999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Da9-3x-gJJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="mTf-H9-caw"/>
+                                </constraints>
+                                <state key="normal" title="Query">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickButton:" destination="uD4-z7-1hg" eventType="touchUpInside" id="fbO-2g-ZGy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEXT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVu-Jl-08Z">
+                                <rect key="frame" x="279" y="242" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1nW-wm-Uli" firstAttribute="centerX" secondItem="H0k-QO-Nmv" secondAttribute="centerX" id="7wq-8Z-7pa"/>
+                            <constraint firstItem="1nW-wm-Uli" firstAttribute="top" secondItem="VVu-Jl-08Z" secondAttribute="bottom" constant="22" id="NbA-cb-O0R"/>
+                            <constraint firstItem="1nW-wm-Uli" firstAttribute="centerY" secondItem="H0k-QO-Nmv" secondAttribute="centerY" id="nMu-2k-frj"/>
+                            <constraint firstItem="VVu-Jl-08Z" firstAttribute="centerX" secondItem="1nW-wm-Uli" secondAttribute="centerX" id="yM3-wp-yC6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="VVu-Jl-08Z" id="Uj0-tq-Xl1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPE-iy-LCv" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
